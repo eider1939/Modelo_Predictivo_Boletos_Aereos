@@ -66,18 +66,23 @@ Planeamos incorporar API de viajes para incluir datos en tiempo real.
 
 El repositorio se compone de cuatro carpetas:
 
-** Data:
+
+### Data:
+    
     Esta carpeta contiene 14 archivos .csv de los cuales 12 son los datos extraidos del respositorio de MeshalAlamr. los otros dos archivos son generados por la transformacion y limpieza de los datos.
 
-** Transformacion_Y_limpieza:
+
+### Transformacion_Y_limpieza:
     Con tiene dos archivos .ipynb. donde el llamado join_Data.ipynb se realiza la concatenacion de los 12 archivos generando el archivo Datos_completos.csv que contiene 55363 registros y 7 columnas.
 
     el archivo Transformacion.ipynb se encarga de analizar las varailbes y realizar cambios si es necesario
     analisis de tipos, de nulos, y de xambio de unidades.
 
-** Analisis: Contine un archivo en el cual se realiza un analisis exploratori y descriptivo de lso datos.
+### Analisis: 
+    
+    Contine un archivo en el cual se realiza un analisis exploratori y descriptivo de lso datos.
 
-** MODELO:
+### MODELO:
 
     Esta carpeta contiene Modelo2.ipynb en el cual se realiza todo el modelo la arga de los datos la creacion de la red neuronal con pytorch y el enternamiento y validacion que en este caso se cuenta con una correlacion de 0.86.
 

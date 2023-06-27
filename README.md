@@ -1,12 +1,12 @@
 ## Modelo Predictivo Boletos Aereos
-Creacion de un App que permita predecir el precio de ticketes aereos, los datos son obtenidos de un repositorio web de Github. Se pretendi realizar un modelo basado en un red neuronal.
+Creacion de un App que permita predecir el precio de ticketes aereos, los datos son obtenidos de un repositorio web de Github. Se pretende realizar un modelo basado en una red neuronal.
 
 ## Necesidad:
 #### Que necesidad se plantea resolver o pregunta a responder 
 
-Planeamos predecir los precios de los boletos para los próximos vuelos para ayudar a los clientes a seleccionar el momento óptimo para viajar y el vuelo más barato al destino deseado.
+La industria de las aerolíneas desde siempre ha sido un mercado inestable sumado a los problemas anteriores mencionados , este mercado sufre demasiadas fluctuaciones respecto a precios debido a varios factores externos , por ende surge un problema para los usuarios para la planificación eficiente de sus vuelos.
 
-A lo largo de este proyecto, se aplicará un modelo de un red neuronal para pronosticar los boletos de avión más baratos a un destino específico en función de los datos extraídos de una variedad de sitios web de viajes como Momondo, Kayak y Expedia.
+Por ende a través de técnicas de IA se pretende crear un modelo predictivo para los vuelos , para que de esta forma los usuarios puedan tener a la mano información acerca de las fechas , los trayectos y los precios, y poder generar información que ayude a la toma de decisiones por parte de una persona o empresa.
 
 La predicción se basará provisionalmente en las siguientes características:
 
@@ -48,7 +48,7 @@ RUTAS:
 - PAR => SVO 
 
 
-#### ¿qué predecirá como su objetivo?
+#### ¿Qué predecirá como su objetivo?
 Precios de vuelos.
 
 ## Herramientas:
@@ -60,6 +60,18 @@ Matplotlib, Seaborn y Tableau para la visualización de datos.
 
 #### ¿Está planeando con anticipación la necesidad o el uso de herramientas adicionales además de las requeridas?
 Planeamos incorporar API de viajes para incluir datos en tiempo real.
+
+### Arquitectura red neuronal
+Usamos una red neuronal secuencial con la siguiente estructura:
+La red mencionada es una red neuronal con una capa oculta de 16 unidades. La estructura de la red se define en el método __init__() de la clase RedPrecios, donde se crea una instancia de nn.Sequential llamada linear_relu_stack. Dentro de linear_relu_stack, se definen varias capas lineales y funciones de activación ReLU.
+Las capas se definen de la siguiente manera:
+nn.Linear(32, 16): Capa lineal con 32 unidades de entrada y 16 unidades de salida.
+nn.ReLU(): Función de activación ReLU.
+nn.Linear(16, 32): Capa lineal con 16 unidades de entrada y 32 unidades de salida.
+nn.ReLU(): Función de activación ReLU.
+nn.Linear(32, 1): Capa lineal con 32 unidades de entrada y 1 unidad de salida.
+En el método forward(), se aplica la operación de propagación hacia adelante de la red. La entrada x se pasa a través de linear_relu_stack y el resultado se asigna a y_pred. Finalmente, y_pred se devuelve como la salida de la red.
+
 
 
 ## Descripcion General del repositorio
@@ -75,15 +87,15 @@ El repositorio se compone de cuatro carpetas:
 ### Transformacion_Y_limpieza:
     Con tiene dos archivos .ipynb. donde el llamado join_Data.ipynb se realiza la concatenacion de los 12 archivos generando el archivo Datos_completos.csv que contiene 55363 registros y 7 columnas.
 
-    el archivo Transformacion.ipynb se encarga de analizar las varailbes y realizar cambios si es necesario
-    analisis de tipos, de nulos, y de xambio de unidades.
+    el archivo Transformacion.ipynb se encarga de analizar las varialbes y realizar cambios si es necesario
+    analisis de tipos, de nulos, y de cambio de unidades.
 
 ### Analisis: 
     
-    Contine un archivo en el cual se realiza un analisis exploratori y descriptivo de lso datos.
+    Contiene un archivo en el cual se realiza un analisis exploratorio y descriptivo de los datos.
 
 ### MODELO:
 
-    Esta carpeta contiene Modelo2.ipynb en el cual se realiza todo el modelo la arga de los datos la creacion de la red neuronal con pytorch y el enternamiento y validacion que en este caso se cuenta con una correlacion de 0.86.
+    Esta carpeta contiene Modelo2.ipynb en el cual se realiza todo el modelo la carga de los datos, la creacion de la red neuronal con pytorch y el entrenamiento y validacion.
 
-    Tambien se cuenta con nos archios .pt que son los mododelos ya guardados y que pueden se utilizados para las predicciones.
+    Tambien se cuenta con los archios .pt que son los mododelos ya guardados y que pueden se utilizados para las predicciones.

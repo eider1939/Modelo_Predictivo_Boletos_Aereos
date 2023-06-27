@@ -1,9 +1,7 @@
-## Modelo Predictivo Boletos Aereos
-Creacion de un App que permita predecir el precio de ticketes aereos, los datos son obtenidos de un repositorio web de Github. Se pretende realizar un modelo basado en una red neuronal.
+## Modelo Predictivo Boletos Aéreos
+El objetivo es la creación de un App web que permita predecir el precio de tiquetes aéreos, los datos son obtenidos de un repositorio de Github. Se pretende realizar un modelo basado en una red neuronal para la predicción.
 
 ## Necesidad:
-#### Que necesidad se plantea resolver o pregunta a responder 
-
 La industria de las aerolíneas desde siempre ha sido un mercado inestable sumado a los problemas anteriores mencionados , este mercado sufre demasiadas fluctuaciones respecto a precios debido a varios factores externos , por ende surge un problema para los usuarios para la planificación eficiente de sus vuelos.
 
 Por ende a través de técnicas de IA se pretende crear un modelo predictivo para los vuelos , para que de esta forma los usuarios puedan tener a la mano información acerca de las fechas , los trayectos y los precios, y poder generar información que ayude a la toma de decisiones por parte de una persona o empresa.
@@ -81,13 +79,13 @@ El repositorio se compone de cuatro carpetas:
 
 ### Data:
     
-    Esta carpeta contiene 14 archivos .csv de los cuales 12 son los datos extraidos del respositorio de MeshalAlamr. los otros dos archivos son generados por la transformacion y limpieza de los datos.
+    Esta carpeta contiene 14 archivos .csv de los cuales 12 son los datos extraídos del repositorio de MeshalAlamr. Los otros dos archivos son generados por la transformación y limpieza de los datos.
 
 
 ### Transformacion_Y_limpieza:
-    Con tiene dos archivos .ipynb. donde el llamado join_Data.ipynb se realiza la concatenacion de los 12 archivos generando el archivo Datos_completos.csv que contiene 55363 registros y 7 columnas.
+    Con tiene dos archivos .ipynb. donde el llamado join_Data.ipynb se realiza la concatenación de los 12 archivos generando el archivo Datos_completos.csv que contiene 55363 registros y 7 columnas.
 
-    el archivo Transformacion.ipynb se encarga de analizar las varialbes y realizar cambios si es necesario
+    El archivo Transformacion.ipynb se encarga de analizar las variables y realizar cambios si es necesario
     analisis de tipos, de nulos, y de cambio de unidades.
 
 ### Analisis: 
@@ -98,4 +96,4 @@ El repositorio se compone de cuatro carpetas:
 
     Esta carpeta contiene Modelo2.ipynb en el cual se realiza todo el modelo la carga de los datos, la creacion de la red neuronal con pytorch y el entrenamiento y validacion.
 
-    Tambien se cuenta con los archios .pt que son los mododelos ya guardados y que pueden se utilizados para las predicciones.
+    Tambien se cuenta con los archios .pt que son los modelos ya guardados y que pueden ser utilizados para las predicciones.

@@ -1,5 +1,5 @@
-## Modelo_Predictivo_Boletos_Aereos
- Creacion de un App que permita predecir el precio de ticketes aereos, los datos son obtenidos de un repositorio web de Github. Se pretendi realizar un modelo basado en un red neuronal.
+## Modelo Predictivo Boletos Aereos
+Creacion de un App que permita predecir el precio de ticketes aereos, los datos son obtenidos de un repositorio web de Github. Se pretendi realizar un modelo basado en un red neuronal.
 
 ## Necesidad:
 #### Que necesidad se plantea resolver o pregunta a responder 

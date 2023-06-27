@@ -8,10 +8,10 @@ Por ende a través de técnicas de IA se pretende crear un modelo predictivo par
 
 La predicción se basará provisionalmente en las siguientes características:
 
-precios de vuelos anteriores
-destino
-partida
-clase
+precios de vuelos anteriores.<br>
+destino.<br>
+partida.<br>
+clase.<br>
 aerolínea
 
 #### ¿Quién se beneficia de construir este modelo/sistema?

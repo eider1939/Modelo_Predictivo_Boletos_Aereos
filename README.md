@@ -60,14 +60,23 @@ Matplotlib, Seaborn y Tableau para la visualización de datos.
 Planeamos incorporar API de viajes para incluir datos en tiempo real.
 
 ### Arquitectura red neuronal
+
 Usamos una red neuronal secuencial con la siguiente estructura:
+
 La red mencionada es una red neuronal con una capa oculta de 16 unidades. La estructura de la red se define en el método __init__() de la clase RedPrecios, donde se crea una instancia de nn.Sequential llamada linear_relu_stack. Dentro de linear_relu_stack, se definen varias capas lineales y funciones de activación ReLU.
+
 Las capas se definen de la siguiente manera:
+
 nn.Linear(32, 16): Capa lineal con 32 unidades de entrada y 16 unidades de salida.
+
 nn.ReLU(): Función de activación ReLU.
+
 nn.Linear(16, 32): Capa lineal con 16 unidades de entrada y 32 unidades de salida.
+
 nn.ReLU(): Función de activación ReLU.
-nn.Linear(32, 1): Capa lineal con 32 unidades de entrada y 1 unidad de salida.
+
+nn.Linear(32, 1): Capa lineal con 32 unidades de entrada y 1 unidad de salida
+
 En el método forward(), se aplica la operación de propagación hacia adelante de la red. La entrada x se pasa a través de linear_relu_stack y el resultado se asigna a y_pred. Finalmente, y_pred se devuelve como la salida de la red.
 
 

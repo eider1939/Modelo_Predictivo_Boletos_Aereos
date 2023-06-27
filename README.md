@@ -23,7 +23,7 @@ Clientes de vuelos.
 El conjunto de datos se creará extrayendo de un repositorio web https://github.com/MeshalAlamr/flight-price-prediction del usuario MeshalAlamr el cual extrae los datos de diferentes sitios web de viajes.
 
 ## Dataset
-Esta carpeta contiene los datos raspados de Kayak para el período del 01-02-2022 al 30-04-2022, incluidas las siguientes 12 rutas:
+Esta carpeta contiene los datos extraidos de Kayak para el período del 01-02-2022 al 30-04-2022, incluidas las siguientes 12 rutas:
 
 * NYC = NUEVA YORK
 * PAR = PARIS

@@ -101,7 +101,7 @@ El repositorio se compone de cuatro carpetas:
     
     Contiene un archivo en el cual se realiza un analisis exploratorio y descriptivo de los datos.
 
-### MODELO:
+### Modelo:
 
     Esta carpeta contiene Modelo2.ipynb en el cual se realiza todo el modelo la carga de los datos, la creacion de la red neuronal con pytorch y el entrenamiento y validacion.
 
